@@ -32,7 +32,7 @@ def get_img(weather: str) -> str:
 
 
 def get_weather_data(city_name: str) -> str:
-    api_key = #put your api key here in str ofc
+    api_key = #put your api key here in str :)
     url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid={}'.format(city_name, api_key)
     json = (requests.get(url)).json()
     mausam = (((json["weather"])[0])["main"])
